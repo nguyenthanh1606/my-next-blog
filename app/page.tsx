@@ -5,6 +5,7 @@ export default async function Home() {
   return (
     <div>
       <h1>My Blog</h1>
+      <p>This is my blog using Next.js</p>
       {posts?.map((post: { id: string; title: string; content: string }) => (
         <div key={post.id}>
           <h2>{post.title}</h2>
