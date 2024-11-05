@@ -1,6 +1,6 @@
 export default async function Home() {
-  let data = await fetch("http://localhost:1337/api/posts");
-  let posts = await data.json().then((res) => res.data);
+  const data = await fetch(`${process.env.API_URL}/posts`);
+  const posts = await data.json().then((res) => res.data);
 
   return (
     <div>
